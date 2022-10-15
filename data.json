@@ -1,0 +1,26 @@
+{
+    "Futbol": {
+        "bannerImg":"bannerFutbol.jpg",
+        "titleFt":"Futbol",
+        "favoriteThing":"Deportivo Cali",
+        "ftdesc":"I been an artistic guy since day 1, I guess this of being a designer wasnt that hard to decide thanks to that. Now days I been working on a personal character call The Bear, a wild colombian bear that rides a bicicle, is very left handed and has no filter over what he thinks and said.",
+        "icon":"soccer_icon_1-100.jpg",
+        "close":"close.jpg"
+    },
+    "Draw": {
+        "bannerImg":"bannerDraw.jpg",
+        "titleFt":"Draw",
+        "favoriteThing":"The Bear",
+        "ftdesc":"I been an artistic guy since day 1, I guess this of being a designer wasnt that hard to decide thanks to that. Now days I been working on a personal character call The Bear, a wild colombian bear that rides a bicicle, is very left handed and has no filter over what he thinks and said.",
+        "icon":"pencil_icon_1-100.jpg",
+        "close":"close.jpg"
+    },
+    "Beer": {
+        "bannerImg":"bannerBeer.jpg",
+        "titleFt":"Beer",
+        "favoriteThing":"Poker",
+        "ftdesc":"I been an artistic guy since day 1, I guess this of being a designer wasnt that hard to decide thanks to that. Now days I been working on a personal character call The Bear, a wild colombian bear that rides a bicicle, is very left handed and has no filter over what he thinks and said.",
+        "icon":"beer_icon_1-100.jpg",
+        "close":"close.jpg"
+    }
+  }
