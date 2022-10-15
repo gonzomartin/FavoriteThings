@@ -1,0 +1,6 @@
+@media screen and (min-width: 768px) {
+    .home {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    }
+}
