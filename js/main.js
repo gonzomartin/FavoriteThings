@@ -53,14 +53,13 @@ import { getData } from "./modules/dataMiner.js";
 
     function showItem () {
         let currentItem = ftInfo[this.id]; 
-        
     }
 
     getData('./data.json', displayFt);
 
     function openPopUp(item) {
         
-        let theLigthbox = document.querySelector('.lightbox');
+        let theLigthbox = document.querySelector('.popUpInfo');
         theLigthbox.classList.add('show-popUp');
         showItem();
     }
@@ -71,6 +70,6 @@ import { getData } from "./modules/dataMiner.js";
 
     icons.forEach(icon => icon.addEventListener('click', openPopUp));
 
-    // popUpClose.addEventListener('click', closePopUp);
+    //popUpClose.addEventListener('click', closePopUp);
 
 })();
