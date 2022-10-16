@@ -7,12 +7,15 @@ import { getData } from "./modules/dataMiner.js";
         theItems = document.querySelector('.popUp'),
         popUpClose = theItems.querySelector('.close'),
         ftInfo;
+
     const icons = document.querySelectorAll('button');
     
+    console.log(icons);
 
+    
     function displayFt(info) {
 
-        ftInfo = info;
+        //ftInfo = info;
 
         const items = Object.keys(info);
 
@@ -24,7 +27,9 @@ import { getData } from "./modules/dataMiner.js";
                
             containers[0].querySelector('img').src = `images/${info[item].bannerImg}`;
             containers[0].querySelector('img').id = item;
-            containers[0].querySelector('img').addEventListener('click', showItem);
+            containers[0].querySelector('img').addEventListener('click', function(item) { 
+                openPopUp(info[item]);
+            })
 
             containers[1].textContent = info[item].titleFt;
             containers[2].textContent = info[item].favoriteThing;
@@ -32,11 +37,15 @@ import { getData } from "./modules/dataMiner.js";
 
             containers[4].querySelector('img').src = `images/${info[item].icon}`;
             containers[4].querySelector('img').id = item;
-            containers[4].querySelector('img').addEventListener('click', showItem);
+            containers[4].querySelector('img').addEventListener('click', function(item) {
+                openPopUp(info[item]);
+            })
 
             containers[5].querySelector('img').src = `images/${info[item].close}`;
             containers[5].querySelector('img').id = item;
-            containers[5].querySelector('img').addEventListener('click', showItem);
+            containers[5].querySelector('img').addEventListener('click', function(item) {
+                openPopUp(info[item]);
+            })  
 
             theItems.appendChild(panel);
         }) 
@@ -44,22 +53,24 @@ import { getData } from "./modules/dataMiner.js";
 
     function showItem () {
         let currentItem = ftInfo[this.id]; 
+        
     }
 
     getData('./data.json', displayFt);
 
-    function openPopUp() {
-        theItems.classList.add('.show-popUp');
+    function openPopUp(item) {
+        
+        let theLigthbox = document.querySelector('.lightbox');
+        theLigthbox.classList.add('show-popUp');
+        showItem();
     }
 
     function closePopUp(){
-        theItems.classList.remove('.show-popUp');
+        theLigthbox.classList.remove('show-popUp');
     }
-
-    
 
     icons.forEach(icon => icon.addEventListener('click', openPopUp));
 
-    popUpClose.addEventListener('click', closePopUp);
+    // popUpClose.addEventListener('click', closePopUp);
 
 })();

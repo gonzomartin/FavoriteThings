@@ -1,16 +1,39 @@
 body {
     background-color: #373639;
 }
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.home { background-color: #373639;
+.home { 
+    width: 60%;
+    display: block;
+    background-color: #373639;
+    margin: 0 auto;
     
-    h1 { color:rgb(86, 86, 86);
-    font-family: cursive;}
-
-    article { background-color: rgb(208, 208, 208);
-        aside { color: red; } 
+    .logo { width: 15%;
+        margin: 0 auto;
+        
     }
-    .user-desc {
-        color: black;
+
+    .pInfo {
+        width: 100%;
+        text-align: center;
+        background-color: #0ece6b;
+        padding: 20px 30px;
+        font-family: mundial, sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 1.2em;
+
+    }
+    .fIcons {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 100px;
+        margin: 0 auto;
     }
 }
