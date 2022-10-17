@@ -1,10 +1,10 @@
-.lightbox {
+.popUpInfo {
     display: none;
 }
   
-.show-popUp { display: block; }
+.show-popUp { display: block !important; }
   
-.lightbox .close {
+.popUpInfo .close {
     float: right;
     margin-right: 30px;
     margin-top: 20px;
