@@ -6,8 +6,7 @@ import { getData } from "./modules/dataMiner.js";
     let popUpTemplate = document.querySelector("#popUpTemplate"),
         buttonContainer = document.querySelector('#buttonContainer'),
         theItems = document.querySelector('.popUp'),
-        popUpClose = theItems.querySelector('.close'),
-        ftInfo;
+        popUpClose = theItems.querySelector('.close');
 
     const icons = document.querySelectorAll('button');
     console.log(icons);
